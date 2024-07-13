@@ -1,0 +1,33 @@
+#MOC
+
+```meta-bind-button
+label: Nuevo Expediente
+icon: ""
+hidden: false
+class: ""
+tooltip: ""
+id: ""
+style: default
+actions:
+  - type: templaterCreateNote
+    templateFile: _system/_templates/Expediente.md
+    folderPath: 04 Empresa/Abogado/Expedientes
+    fileName: ""
+    openNote: true
+
+```
+
+# Expedientes MOC
+MOC (Map of Contents) para los expedientes, dentro de los expedientes enlaza, con [[👥 Gente MOC]], [[🗣 Reuniones MOC]], y [[ACTUACIONES]].
+
+
+---
+### Templates
+- [[Expediente]]
+
+# Expedientes
+```dataview
+table resumen
+from "04 Empresa/Abogado/Expedientes"
+sort file.name asc
+```
