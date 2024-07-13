@@ -5,16 +5,12 @@ tags:
   - Expediente
 persona:
 última acción:
+resumen:
 ---
 
-<%*
-let date = tp.date.now("YYYYMMDD-HHmmss");
-let expedienteNumber = `exp-${date}`;
-let newFileName = `Expediente-${expedienteNumber}`;
-tp.file.rename(newFileName);
--%>
+<%* let date = tp.date.now("YYYYMMDD-HHmmss"); let expedienteNumber = `exp-${date}`; let newFileName = `/04 Empresa/Abogado/Expedientes/Expediente-${expedienteNumber}`; await tp.file.move(newFileName); -%>
 
-# 📂 Seguimiento de Expediente
+# 📂 Seguimiento de Expediente [[<% expedienteNumber %>]]
 
 **Número de Expediente:** `<% expedienteNumber %>`
 **Cliente:** 
